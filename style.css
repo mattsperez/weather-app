@@ -1,0 +1,119 @@
+/* color palette 
+#011f4b - dark navy blue - hsl 216, 97%, 15%  - 216, 97%, 25%, 0.7
+#03396c - navy blue - hsl 209, 95%, 22%
+#005b96 - teal-ish - hsl 204, 100%, 29%
+#6497b1 - blue gray - hsl 200, 33%, 54%
+#b3cde0 - light blue - hsl 205, 42%, 79% -lighter version hsl 205, 42%, 79%
+*/
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    background: linear-gradient(
+		180deg,
+		hsla(216, 97%, 25%, 0.9),
+		hsla(216, 97%, 25%, 0.7),
+		hsla(216, 97%, 25%, 0.5)
+	);
+    height: 100vh;
+}
+
+.weatherForm {
+	margin: 20px;
+}
+
+.cityInput {
+	padding: 10px;
+	font-size: 2rem;
+	font-weight: bold;
+	border: 2px solid hsla(216, 97%, 15%, 0.3);
+	border-radius: 40px;
+	margin: 10px;
+	width: 300px;
+}
+
+button[type='submit'] {
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 2rem;
+	background-color: hsl(216, 97%, 15%);
+	color: white;
+	border: none;
+	border-radius: 40px;
+	text-shadow: 1px 0 5px hsl(200, 33%, 54%);
+}
+
+button[type='submit']:hover {
+	background-color: hsl(216, 97%, 26%);
+}
+
+button[type='submit']:active {
+	background-color: hsl(216, 97%, 36%);
+}
+
+.card {
+	background: linear-gradient(
+		180deg,
+		hsl(200, 33%, 54%),
+		hsl(204, 100%, 29%),
+		hsl(209, 95%, 22%)
+	);
+	padding: 50px;
+	box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.5);
+	min-width: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 90px;
+}
+
+h1 {
+	font-size: 3.5rem;
+	margin-top: 0%;
+	margin-bottom: 25px;
+}
+
+p {
+	font-size: 1.5rem;
+	margin: 5px 0;
+}
+
+.cityDisplay,
+.tempDisplay {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: hsl(205, 42%, 79%);
+	text-shadow: 1px 1px 12px #011f4b;
+	margin-bottom: 25px;
+}
+
+.humidityDisplay {
+	font-weight: bold;
+	margin-bottom: 25px;
+	color: hsl(205, 42%, 79%);
+	text-shadow: 1px 1px 12px #011f4b;
+}
+
+.descDisplay {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 2rem;
+	color: hsl(205, 42%, 79%);
+	text-shadow: 1px 1px 12px #011f4b;
+}
+
+.weatherIcon {
+	margin: 0;
+	font-size: 7.5rem;
+	text-shadow: 1px 0 10px hsl(200, 33%, 54%);
+}
+
+.errorDisplay {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: hsl(205, 42%, 79%);
+	text-shadow: 1px 1px 12px #011f4b;
+}
